@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ta Te Ti</title>
+    <style>
+      body {
+        background-color: #333333;
+        color: #000000;
+        font-family: Arial, sans-serif;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+        margin-top: 150px;
+        background-color: #ffffff;
+        border: 1px solid #cccccc;
+      }
+
+      td {
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        font-size: 48px;
+        cursor: pointer;
+        border: 1px solid #cccccc;
+      }
+
+      tr:not(:last-child) {
+        border-bottom: none;
+      }
+
+      td:not(:last-child) {
+        border-right: none;
+      }
+
+      h1 {
+        color: #ffffff;
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+        font-size: 40px;
+      }
+
+      p {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+        color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Ta Te Ti - Tres en Raya</h1>
+    <table>
+      <tr>
+        <td id="cell-0"></td>
+        <td id="cell-1"></td>
+        <td id="cell-2"></td>
+      </tr>
+      <tr>
+        <td id="cell-3"></td>
+        <td id="cell-4"></td>
+        <td id="cell-5"></td>
+      </tr>
+      <tr>
+        <td id="cell-6"></td>
+        <td id="cell-7"></td>
+        <td id="cell-8"></td>
+      </tr>
+    </table>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.9.0/dist/tf.min.js"></script>
+    <script src="./tateti.js"></script>
+  </body>
+</html>
